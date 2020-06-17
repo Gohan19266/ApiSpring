@@ -1,5 +1,11 @@
 package pe.edu.upeu.academico.dao;
 
-public interface ProductoDao {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import pe.edu.upeu.academico.entity.Producto;
+
+@Repository
+public interface ProductoDao extends CrudRepository<Producto, Long>{
 
 }
