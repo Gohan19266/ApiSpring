@@ -20,5 +20,32 @@ public class CategoriaServiceImp implements CategoriaService{
 		// TODO Auto-generated method stub
 		return (List<Categoria>) categoriaDao.findAll();
 	}
+	@Override
+	@Transactional
+	public Categoria findById(Long idcat) {
+		// TODO Auto-generated method stub
+		return categoriaDao.findById(idcat).orElse(null);
+	}
+	@Override
+	@Transactional
+	public Categoria Add(Categoria cat) {
+		// TODO Auto-generated method stub
+		return categoriaDao.save(cat);
+	}
+	@Override
+	@Transactional
+	public void delete(Long idcat) {
+		// TODO Auto-generated method stub
+		 categoriaDao.deleteById(idcat);
+		
+	}
+	@Override
+	public void Update(Categoria categoria, long idcategoria) {
+		// TODO Auto-generated method stub
+		categoriaDao.findById(idcategoria).ifPresent((x)->{
+			categoria.setIdcategoria(idcategoria);
+			categoriaDao.save(categoria);
+		});
+	}
 	
 }
