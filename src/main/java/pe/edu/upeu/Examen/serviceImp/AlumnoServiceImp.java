@@ -1,4 +1,4 @@
-package pe.edu.upeu.academico.serviceImp;
+package pe.edu.upeu.Examen.serviceImp;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import pe.edu.upeu.academico.dao.AlumnoDao;
-import pe.edu.upeu.academico.entity.Alumno;
-import pe.edu.upeu.academico.services.AlumnoService;
+import pe.edu.upeu.Examen.dao.AlumnoDao;
+import pe.edu.upeu.Examen.entity.Alumno;
+import pe.edu.upeu.Examen.services.AlumnoService;
 
 @Service
 public class AlumnoServiceImp implements AlumnoService {
