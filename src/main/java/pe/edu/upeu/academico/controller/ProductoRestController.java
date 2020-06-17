@@ -1,4 +1,4 @@
-package pe.edu.upeu.Examen.controller;
+package pe.edu.upeu.academico.controller;
 
 public class ProductoRestController {
 

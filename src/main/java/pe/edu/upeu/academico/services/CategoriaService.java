@@ -1,4 +1,4 @@
-package pe.edu.upeu.Examen.services;
+package pe.edu.upeu.academico.services;
 
 public interface CategoriaService {
 
