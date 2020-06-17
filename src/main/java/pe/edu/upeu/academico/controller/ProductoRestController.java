@@ -19,4 +19,8 @@ public class ProductoRestController {
 	public List<Producto> readAll(){
 		return productoService.findAll();
 	}
+	public Producto findById(Long id){
+		return productoService.findById(id);
+	}
+	
 }

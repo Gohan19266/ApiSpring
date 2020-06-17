@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import pe.edu.upeu.academico.dao.ProductoDao;
-import pe.edu.upeu.academico.entity.Alumno;
 import pe.edu.upeu.academico.entity.Producto;
 import pe.edu.upeu.academico.services.ProductoService;
 
