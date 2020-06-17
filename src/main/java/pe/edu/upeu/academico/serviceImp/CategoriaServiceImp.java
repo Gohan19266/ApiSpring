@@ -1,5 +1,24 @@
 package pe.edu.upeu.academico.serviceImp;
 
-public class CategoriaServiceImp {
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import pe.edu.upeu.academico.dao.CategoriaDao;
+import pe.edu.upeu.academico.entity.Categoria;
+import pe.edu.upeu.academico.services.CategoriaService;
+
+@Service
+public class CategoriaServiceImp implements CategoriaService{
+	@Autowired
+	private CategoriaDao categoriaDao;
+	@Override
+	@Transactional(readOnly = true)
+	public List<Categoria> findAll() {
+		// TODO Auto-generated method stub
+		return (List<Categoria>) categoriaDao.findAll();
+	}
+	
 }
