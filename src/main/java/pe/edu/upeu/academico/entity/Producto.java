@@ -1,4 +1,4 @@
-package pe.edu.upeu.Examen.entity;
+package pe.edu.upeu.academico.entity;
 
 import java.io.Serializable;
 

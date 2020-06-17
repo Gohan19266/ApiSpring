@@ -1,4 +1,4 @@
-package pe.edu.upeu.Examen.dao;
+package pe.edu.upeu.academico.dao;
 
 public interface ProductoDao {
 
