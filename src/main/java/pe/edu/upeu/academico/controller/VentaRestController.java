@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pe.edu.upeu.academico.entity.Producto;
 import pe.edu.upeu.academico.entity.Venta;
 import pe.edu.upeu.academico.services.VentaService;
 
