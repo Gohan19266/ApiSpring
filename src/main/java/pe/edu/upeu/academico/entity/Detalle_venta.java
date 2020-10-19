@@ -20,9 +20,9 @@ public class Detalle_venta implements Serializable{
 	private double precio;
 	private int cantidad;
 	private int idproducto;
-	@ManyToOne
-	@JoinColumn(name="idventa")
-	private Venta venta;
+	private int idventa;
+
+
 	public long getIddetalle_venta() {
 		return iddetalle_venta;
 	}
@@ -47,11 +47,11 @@ public class Detalle_venta implements Serializable{
 	public void setIdproducto(int idproducto) {
 		this.idproducto = idproducto;
 	}
-	public Venta getVenta() {
-		return venta;
+	public int getIdventa() {
+		return idventa;
 	}
-	public void setVenta(Venta venta) {
-		this.venta = venta;
+	public void setIdventa(int idventa){
+		this.idventa = idventa;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;

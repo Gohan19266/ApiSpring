@@ -18,7 +18,7 @@ public class Venta implements Serializable{
 	private long idventa;
 	private Date fecha;
 	private double total;
-	private int idcliente;
+	private String idcliente;
 	public Venta() {
 		super();
 	}
@@ -27,12 +27,6 @@ public class Venta implements Serializable{
 	}
 	public void setIdventa(long idventa) {
 		this.idventa = idventa;
-	}
-	public int getIdcliente() {
-		return idcliente;
-	}
-	public void setIdcliente(int idcliente) {
-		this.idcliente = idcliente;
 	}
 	public double getTotal() {
 		return total;
@@ -49,6 +43,13 @@ public class Venta implements Serializable{
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+	public String getIdcliente() {
+		return idcliente;
+	}
+	public void setIdcliente(String idcliente) {
+		this.idcliente = idcliente;
+	}
+	
 	
 	
 }
